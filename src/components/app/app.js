@@ -29,7 +29,7 @@ class App extends Component {
     deleteItem = (id) => {
         this.setState(({data})=>{
             return {
-                data: data.filter(item => item.id != id)
+                data: data.filter(item => item.id !== id)
             }
         })
     }
